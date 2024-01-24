@@ -40,7 +40,9 @@ We sweep the weight-decay value among _{1e-2, 1e-3, 1e-4, 1-5, 1e-6, 1e-7, 1e-8}
 
 **Examples**
 
-We present attention heatmaps in the following figures to assess the interpretability of the methods.
+We present attention heatmaps in the following figure to assess the interpretability of the methods.
+
+![alt text](https://github.com/tueimage/MAD-MIL/blob/main/Docs/heatmaps%20(1).png)
 
 **Reference**
 
