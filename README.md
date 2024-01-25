@@ -9,7 +9,7 @@ This is the PyTorch implementation of the MAD-MIL, which is based on [CLAM](http
 
 **Data Preparation**
 
-For the preprocessing of TCGA datasets, we adhere to CLAM's steps, incorporating features extracted from non-overlapping 256×256 patches at 20× magnification. We share the extracted features through the following links:
+For the preprocessing of TUPAC16 and TCGA datasets, we adhere to CLAM's steps, incorporating features extracted from non-overlapping 256×256 patches at 20× magnification. We share the extracted features through the following links:
 
 * TUPAC16
 ```
