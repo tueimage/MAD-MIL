@@ -2,7 +2,7 @@
 __Multi-head Attention-based Deep Multiple Instance
 Learning__
 
-![alt text](https://github.com/tueimage/MAD-MIL/blob/main/Docs/mad-mil.png)
+![alt text](https://github.com/tueimage/MAD-MIL/blob/main/model.png)
 
 
 This is the PyTorch implementation of the MAD-MIL, which is based on [CLAM](https://github.com/mahmoodlab/CLAM) and [WSI-finetuning](https://github.com/invoker-LL/WSI-finetuning).
