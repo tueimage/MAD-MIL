@@ -4,6 +4,7 @@ Learning__
 
 ![alt text](https://github.com/tueimage/MAD-MIL/blob/main/model.png)
 
+_The attention component used in ABMIL(Left), where only one attention mod- ule is utilized, and in MAD-MIL(Right), where multiple attention modules are incorporated._
 
 This is the PyTorch implementation of the MAD-MIL, which is based on [CLAM](https://github.com/mahmoodlab/CLAM) and [WSI-finetuning](https://github.com/invoker-LL/WSI-finetuning).
 
