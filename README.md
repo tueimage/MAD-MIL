@@ -4,7 +4,7 @@ Learning__
 
 ![alt text](https://github.com/tueimage/MAD-MIL/blob/main/model.png)
 
-_The attention component used in ABMIL(Left), where only one attention mod- ule is utilized, and in MAD-MIL(Right), where multiple attention modules are incorporated._
+_The attention component used in ABMIL(Left), where only one attention module is utilized, and in MAD-MIL(Right), where multiple attention modules are incorporated._
 
 This is the PyTorch implementation of the MAD-MIL, which is based on [CLAM](https://github.com/mahmoodlab/CLAM) and [WSI-finetuning](https://github.com/invoker-LL/WSI-finetuning).
 
@@ -14,18 +14,22 @@ For the preprocessing of TUPAC16 and TCGA datasets, we adhere to CLAM's steps, i
 
 * TUPAC16
 ```
+https://zenodo.org/records/10563985/files/TUPAC.zip?download=1
 ```
 
 * BRCA
 ```
+https://zenodo.org/records/10563985/files/BRCA.zip?download=1
 ```
 
 * LUNG
 ```
+https://zenodo.org/records/10563985/files/LUNG.zip?download=1
 ```
 
 * KIDNEY
 ```
+https://zenodo.org/records/10563985/files/KIDNEY.zip?download=1
 ```
 
 **Training**
