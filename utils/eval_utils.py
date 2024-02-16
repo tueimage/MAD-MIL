@@ -4,7 +4,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from models.model_clam import CLAM_SB, CLAM_MB
-from models.model_abmil import ABMIL, ABMIL_Multihead, ABMIL_Multihead_Sep
+from models.model_abmil import ABMIL, ABMIL_Multihead
 import pdb
 import os
 import pandas as pd
@@ -26,11 +26,9 @@ def initiate_model(args, ckpt_path):
     elif args.model_type =='clam_mb':
         model = CLAM_MB(**model_dict)
     elif args.model_type == 'abmil':
-            model = ABMIL(**model_dict) 
+        model = ABMIL(**model_dict) 
     elif args.model_type == 'abmil_multihead':
-        model = ABMIL_Multihead(**model_dict, temp= args.temp)   
-    elif args.model_type == 'abmil_multihead_sep':
-        model = ABMIL_Multihead_Sep(**model_dict, temp= args.temp)         
+        model = ABMIL_Multihead(**model_dict, n= args.n, head_size= args.head_size)               
         
     print_network(model)
 
