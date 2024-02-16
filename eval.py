@@ -42,8 +42,8 @@ parser.add_argument('--micro_average', action='store_true', default=False,
                     help='use micro_average instead of macro_avearge for multiclass AUC')
 parser.add_argument('--split', type=str, choices=['train', 'val', 'test', 'all'], default='test')
 parser.add_argument('--task', type=str, choices=['task_1_tumor_vs_normal',  'task_2_tumor_subtyping'])
-parser.add_argument('--n_heads', type=int, default=0, help='numbr of heads')
-parser.add_argument('--temp', type= str, default= "0, 0" , help='temperature scailing')
+parser.add_argument('--n', type= int, default= 2, help='number of heads in the attention network')
+parser.add_argument('--head_size', type= str, default= "small" , help='dimension of each head os the attention network')
 args = parser.parse_args()
 
 device=torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -69,8 +69,8 @@ settings = {'task': args.task,
             'model_type': args.model_type,
             'drop_out': args.drop_out,
             'model_size': args.model_size,
-            'n_heads': args.n_heads,
-            'temp': args.temp,}
+            'n': args.n,
+            'head_size': args.head_size}
 
 with open(args.save_dir + '/eval_experiment_{}.txt'.format(args.save_exp_code), 'w') as f:
     print(settings, file=f)
