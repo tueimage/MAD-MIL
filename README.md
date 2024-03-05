@@ -39,7 +39,7 @@ The training can be done for different models and datasets with proper arguments
 python train.py --data_root_dir feat-directory --lr 1e-4 --reg 1e-6 --seed 2021 --k 5 --k_end 5 --split_dir task_tupac16 --model_type abmil_multihead --task task_1_tumor_vs_normal --csv_path ./dataset_csv/tupac16.csv --exp_code MAD_Five_reg_1e-6  --n 5
 ```
 
-We sweep the weight-decay value among _{1e-2, 1e-3, 1e-4, 1-5, 1e-6, 1e-7, 1e-8}_ and choose the optimal value based on the validation loss.
+We sweep the weight-decay value among _{1e-2, 1e-3, 1e-4, 1e-5, 1e-6, 1e-7, 1e-8}_ and choose the optimal value based on the validation loss.
 
 
 **Examples**
